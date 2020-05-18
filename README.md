@@ -5,6 +5,7 @@ Unofficial port of the Ren'Py visual novel "Girls Are Weird" by bentosmile, usin
 
 ## TODO:
 Convert .rpy and .py files for faster boot times.
+Make save data save in .nro folder instead of a folder on the SD card root.
 
 ## Bugs:
 You tell me!
