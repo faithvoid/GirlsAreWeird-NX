@@ -7,5 +7,15 @@ Unofficial port of the Ren'Py visual novel "Girls Are Weird" by bentosmile, usin
 Convert .rpy and .py files for faster boot times.
 Make save data save in .nro folder instead of a folder on the SD card root.
 
+## Build:
+Once you have your DevkitPro environment set up and a copy of renpy-switch.elf from the Ren'Py Switch SDK, all you need to do is run these two commands (or your system's equivalent) and you're set!
+
+'/opt/devkitpro/tools/bin/elf2nro' renpy-switch.elf TITLE.nro --icon=icon.jpg --nacp=TITLE.NACP --romfsdir=romfs
+
+'/opt/devkitpro/tools/bin/nacptool' --create "TITLE" "AUTHORS" "VERSION" TITLE.NACP
+
+Replacing "TITLE", "AUTHORS" and "VERSION" with whatever you want.
+
+
 ## Bugs:
 You tell me!
